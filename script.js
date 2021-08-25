@@ -1,3 +1,5 @@
+function show(){
+var pop =setTimeout(() => {
 const popup= document.createElement("div");
 popup.setAttribute("id","overlay");
 popup.setAttribute("class","active");
@@ -6,7 +8,8 @@ document.body.append(popup);
 const img= document.createElement("div");
 img.setAttribute("class","popupmenu");
 img.innerHTML=`<img src="https://cataas.com/cat/595f280c557291a9750ebf80">`;
-document.body.append(img);
+document.body.append(img);},2000);
+};
 
 const search = document.createElement("div")
 search.setAttribute("class","search")
